@@ -28,7 +28,7 @@ angular.module('APIMATICCalculatorLib')
              *
              * @return {promise<Precision>}
              */
-            getCalculate: function (input) {
+            getCalculateBarcelonaAPIMeetup: function (input) {
                 // Assign default values
                 input = input || {};
 
