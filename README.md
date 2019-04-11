@@ -181,13 +181,13 @@ The singleton instance of the ``` SimpleCalculatorController ``` class can be ac
 	});
 ```
 
-### <a name="get_calculate_opp"></a>![Method: ](https://apidocs.io/img/method.png ".SimpleCalculatorController.getCalculateOpp") getCalculateOpp
+### <a name="get_calculate_op"></a>![Method: ](https://apidocs.io/img/method.png ".SimpleCalculatorController.getCalculateOp") getCalculateOp
 
 > Calculates the expression using the specified operation
 
 
 ```javascript
-function getCalculateOpp(input)
+function getCalculateOp(input)
 ```
 #### Parameters
 
@@ -211,7 +211,7 @@ function getCalculateOpp(input)
         input['y'] = 5;
 
 
-		var result = SimpleCalculatorController.getCalculateOpp(input);
+		var result = SimpleCalculatorController.getCalculateOp(input);
         //Function call returns a promise
         result.then(function(success){
 			//success case
