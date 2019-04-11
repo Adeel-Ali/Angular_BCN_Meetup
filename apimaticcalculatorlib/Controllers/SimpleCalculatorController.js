@@ -19,7 +19,7 @@ angular.module('APIMATICCalculatorLib')
     function SimpleCalculatorController($q, Configuration, HttpClient, APIHelper, BaseController) {
         return {
             /**
-             * Calculates the expression using the specified operation.
+             * Calculates the expression using the specified operation
              *
              * @param {array}  input    Array with all options for search
              * @param {OperationTypeEnum} input['operation'] The operator to apply on the variables
@@ -28,7 +28,7 @@ angular.module('APIMATICCalculatorLib')
              *
              * @return {promise<Precision>}
              */
-            getCalculateOp: function (input) {
+            getCalculateOpp: function (input) {
                 // Assign default values
                 input = input || {};
 
