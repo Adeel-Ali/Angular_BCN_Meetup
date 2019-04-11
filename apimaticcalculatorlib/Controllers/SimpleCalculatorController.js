@@ -28,7 +28,7 @@ angular.module('APIMATICCalculatorLib')
              *
              * @return {promise<Precision>}
              */
-            getCalculate: function (input) {
+            getCalculateEP: function (input) {
                 // Assign default values
                 input = input || {};
 

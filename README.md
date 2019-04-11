@@ -181,13 +181,13 @@ The singleton instance of the ``` SimpleCalculatorController ``` class can be ac
 	});
 ```
 
-### <a name="get_calculate"></a>![Method: ](https://apidocs.io/img/method.png ".SimpleCalculatorController.getCalculate") getCalculate
+### <a name="get_calculate_ep"></a>![Method: ](https://apidocs.io/img/method.png ".SimpleCalculatorController.getCalculateEP") getCalculateEP
 
 > Calculates the expression using the specified operation.
 
 
 ```javascript
-function getCalculate(input)
+function getCalculateEP(input)
 ```
 #### Parameters
 
@@ -211,7 +211,7 @@ function getCalculate(input)
         input['y'] = 5;
 
 
-		var result = SimpleCalculatorController.getCalculate(input);
+		var result = SimpleCalculatorController.getCalculateEP(input);
         //Function call returns a promise
         result.then(function(success){
 			//success case
