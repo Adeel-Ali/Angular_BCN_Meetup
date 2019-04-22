@@ -181,13 +181,13 @@ The singleton instance of the ``` SimpleCalculatorController ``` class can be ac
 	});
 ```
 
-### <a name="get_calculate_barcelona_api_meetup"></a>![Method: ](https://apidocs.io/img/method.png ".SimpleCalculatorController.getCalculateBarcelonaAPIMeetup") getCalculateBarcelonaAPIMeetup
+### <a name="get_calculate"></a>![Method: ](https://apidocs.io/img/method.png ".SimpleCalculatorController.getCalculate") getCalculate
 
 > Calculates the expression using the specified operation
 
 
 ```javascript
-function getCalculateBarcelonaAPIMeetup(input)
+function getCalculate(input)
 ```
 #### Parameters
 
@@ -211,7 +211,7 @@ function getCalculateBarcelonaAPIMeetup(input)
         input['y'] = 5;
 
 
-		var result = SimpleCalculatorController.getCalculateBarcelonaAPIMeetup(input);
+		var result = SimpleCalculatorController.getCalculate(input);
         //Function call returns a promise
         result.then(function(success){
 			//success case
