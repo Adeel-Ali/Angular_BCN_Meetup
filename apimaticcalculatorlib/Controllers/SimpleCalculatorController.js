@@ -10,13 +10,14 @@
 angular.module('APIMATICCalculatorLib')
     .factory('SimpleCalculatorController', ['$q',
         'Configuration',
+        'Servers',
         'HttpClient',
         'APIHelper',
         'BaseController',
         SimpleCalculatorController
     ]);
 
-    function SimpleCalculatorController($q, Configuration, HttpClient, APIHelper, BaseController) {
+    function SimpleCalculatorController($q, Configuration, Servers, HttpClient, APIHelper, BaseController) {
         return {
             /**
              * Calculates the expression using the specified operation
@@ -36,7 +37,7 @@ angular.module('APIMATICCalculatorLib')
                 var _deffered = $q.defer();
                 
                 //prepare query string for API call
-                var _baseUri = Configuration.BASEURI;
+                var _baseUri = Configuration.getBaseUri();
                 var _queryBuilder = _baseUri + '/{operation}';
                 
                 // Process template parameters
